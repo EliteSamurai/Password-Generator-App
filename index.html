@@ -8,16 +8,20 @@
     <title>Password Generator</title>
 </head>
 <body>
+    <div class="container">
     <h1>Generate a <span>random password</span></h1>
     <h5>Never use an insecure password again.</h5>
 
     <button onclick="randomPass()">Generate passwords</button>
-
+    <input type="number" name="num" id="num" placeholder="Length" min="4" max="19">
+    
     <p></p>
 
+    <div class="passwords">
     <div id="first"></div>
     <div id="second"></div>
-
+    </div>
+    </div>
     <script src="passGen.js"></script>
 </body>
 </html>
